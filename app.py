@@ -19,9 +19,9 @@ async def main():
         await page.wait_for_load_state('networkidle')
 
         # Login no VTEX
-        await page.fill('#email', 'eduardo.klitzke@adcos.com.br')
+        await page.fill('#email', '*********')
         await page.click('[data-testid="email-form-continue"]')
-        await page.fill('input[name="password"]', 'Breakmen451.')
+        await page.fill('input[name="password"]', '**********')
         await page.click('#chooseprovider_signinbtn')
         await page.wait_for_load_state('networkidle')
 
